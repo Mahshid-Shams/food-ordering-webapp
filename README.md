@@ -64,6 +64,7 @@ Requirements: Docker with Docker Compose.
 
 ```
 cd code
+for f in env/*.env.example; do cp "$f" "${f%.example}"; done
 docker compose build
 docker compose up web
 ```
