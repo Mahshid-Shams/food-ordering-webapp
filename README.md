@@ -78,7 +78,7 @@ The database is created and filled with sample data the first time the `db` serv
 
 The Stripe keys have been removed from this public copy. Registration and payments call Stripe, so they need valid keys. To use them, create a Stripe test account and set your own test keys in:
 
-- `code/env/stripe.env` (secret key)
+- `code/env/stripe.env.example`
 - `code/PL8S/src/main/java/it/unipd/dei/webapp/wa001/resource/StripeService.java` (secret key)
 - `code/PL8S/src/main/java/it/unipd/dei/webapp/wa001/filter/StripeResourceFilter.java` (webhook secret)
 - `code/PL8S/src/main/webapp/js/checkout.js` (publishable key)
